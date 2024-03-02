@@ -15,8 +15,9 @@ from sklearn import metrics
 
 
 # fit the tree using gradient boosted classifier
+# deviance changed to log_loss following scikit-learn deprecation 
 def fit_boosted_tree(X, y, n_est=10, lr=0.1, d=1):
-    clf = GradientBoostingClassifier(loss='deviance', learning_rate=lr, n_estimators=n_est, max_depth=d,
+    clf = GradientBoostingClassifier(loss='log_loss', learning_rate=lr, n_estimators=n_est, max_depth=d,
                                     random_state=42)
     clf.fit(X, y)
     out = clf.score(X, y)
