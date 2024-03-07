@@ -21,7 +21,7 @@ setup(
     version="0.1.7",
     description="Implementation of General Optimal Sparse Decision Tree",
     author="UBC Systopia Research Lab",
-    url="https://github.com/ubc-systopia/gosdt-guesses",
+    url="https://github.com/trevor-fitzpatrick/gosdt-guesses-24/",
     license="BSD 3-Clause",
     packages=find_packages(where='.'),
     cmake_install_dir="gosdt",
